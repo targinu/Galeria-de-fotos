@@ -1,0 +1,27 @@
+a,
+p {
+  font-size: 15px;
+}
+
+.navbar {
+  min-height: 90px;
+}
+
+.header {
+  box-shadow: 0px 5px 30px black;
+}
+
+.titulo{
+  cursor: default;
+}
+
+/* responsividade */
+@media (max-width: 1000px) {
+  .navbar {
+    min-height: auto;
+  }
+
+  .titulo{
+    font-size: 10px;
+  }
+}
