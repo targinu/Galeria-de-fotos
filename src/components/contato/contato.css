@@ -1,0 +1,24 @@
+.label{
+    text-align: left;
+}
+
+.foto{
+    max-width: 25vw;
+}
+
+/* responsividade */
+@media (max-width: 1024px) {
+    .tudo{
+        margin-top: 5vh;
+    }
+  }
+
+@media (max-width: 768px) {
+    .foto{
+        display: none;
+    }
+
+    .tudo{
+        margin-top: 0vh;
+    }
+  }

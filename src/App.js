@@ -1,11 +1,11 @@
 import "./App.css";
 import "rbx/index.css";
-import Header from "./components/header/header";
+import RoutesWrapper from "./routes";
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <RoutesWrapper></RoutesWrapper>
     </div>
   );
 }
