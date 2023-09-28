@@ -23,14 +23,14 @@ const calcularIdade = (dataNascimento) => {
   return idade;
 };
 
+const idade = calcularIdade("1998-04-01");
+
 function Home() {
   const imagens = [
     "https://images.unsplash.com/photo-1682687220161-e3e7388e4fad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     "https://images.unsplash.com/photo-1695088564293-36752ad99b24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
     "https://images.unsplash.com/photo-1682685795557-976f03aca7b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
   ];
-
-  const idade = calcularIdade("1998-04-01"); // Substitua isso pela data de nascimento correta
 
   return (
     <div>
@@ -39,7 +39,9 @@ function Home() {
       <section class="section" id="sobre">
         <div class="columns is-centered">
           <div class="column is-one-quarter">
-            <img src={photo} class="photo" alt="logo" />
+            <figure class="image">
+              <img src={photo} class="is-rounded" alt="logo" />
+            </figure>
           </div>
           <div class="column is-two-thirds">
             <section class="section is-medium">
